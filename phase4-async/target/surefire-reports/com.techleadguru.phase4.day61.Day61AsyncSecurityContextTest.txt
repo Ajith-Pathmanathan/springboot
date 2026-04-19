@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.techleadguru.phase4.day61.Day61AsyncSecurityContextTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.28 s -- in com.techleadguru.phase4.day61.Day61AsyncSecurityContextTest

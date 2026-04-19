@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.techleadguru.phase2.day41.Day41SlowQueryDetectionTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s -- in com.techleadguru.phase2.day41.Day41SlowQueryDetectionTest

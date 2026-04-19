@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.techleadguru.phase4.day64.Day64ScheduledInternalsTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s -- in com.techleadguru.phase4.day64.Day64ScheduledInternalsTest

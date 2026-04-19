@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.techleadguru.phase1.day19.Day19SelfInvocationTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.947 s <<< FAILURE! -- in com.techleadguru.phase1.day19.Day19SelfInvocationTest
+com.techleadguru.phase1.day19.Day19SelfInvocationTest.self_invocation_runs_in_same_transaction -- Time elapsed: 0.017 s <<< ERROR!
+java.lang.IllegalStateException: Cannot activate transaction synchronization - already active
+	at org.springframework.transaction.support.TransactionSynchronizationManager.initSynchronization(TransactionSynchronizationManager.java:256)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.prepareSynchronization(AbstractPlatformTransactionManager.java:583)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:538)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:103)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:248)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:237)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

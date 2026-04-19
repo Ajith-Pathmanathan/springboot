@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.techleadguru.phase4.day72.Day72DeadlockTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.150 s -- in com.techleadguru.phase4.day72.Day72DeadlockTest

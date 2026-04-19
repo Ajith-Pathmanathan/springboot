@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.techleadguru.phase1.day19.Day19SelfInvocationTest" time="3.947" tests="3" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase1-core/target/test-classes:/home/ilabs-laph893/Documents/personal/sprigboot/phase1-core/target/classes:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.4.4/spring-boot-starter-aop-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/aspectj/aspectjweaver/1.9.23/aspectjweaver-1.9.23.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-autoconfigure-processor/3.4.4/spring-boot-autoconfigure-processor-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar:/home/ilabs-laph893/.m2/repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar:/home/ilabs-laph893/.m2/repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar:/home/ilabs-laph893/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/home/ilabs-laph893/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/home/ilabs-laph893/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/home/ilabs-laph893/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/ilabs-laph893/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/home/ilabs-laph893/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/ilabs-laph893/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.4/spring-boot-starter-test-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-test/3.4.4/spring-boot-test-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.4/spring-boot-test-autoconfigure-3.4.4.jar:/home/ilabs-laph893/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/ilabs-laph893/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/ilabs-laph893/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/ilabs-laph893/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/ilabs-laph893/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/home/ilabs-laph893/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/home/ilabs-laph893/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/home/ilabs-laph893/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/ilabs-laph893/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/home/ilabs-laph893/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ilabs-laph893/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/ilabs-laph893/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/ilabs-laph893/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/home/ilabs-laph893/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ilabs-laph893/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/home/ilabs-laph893/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/ilabs-laph893/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-test/6.2.5/spring-test-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/home/ilabs-laph893/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="phase1-core-test"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase1-core/target/surefire/surefirebooter-20260405225726632_3.jar /home/ilabs-laph893/Documents/personal/sprigboot/phase1-core/target/surefire 2026-04-05T22-57-26_502-jvmRun1 surefire-20260405225726632_1tmp surefire_0-20260405225726632_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="Day19SelfInvocationTest"/>
+    <property name="surefire.test.class.path" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase1-core/target/test-classes:/home/ilabs-laph893/Documents/personal/sprigboot/phase1-core/target/classes:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.4.4/spring-boot-starter-aop-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/aspectj/aspectjweaver/1.9.23/aspectjweaver-1.9.23.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-autoconfigure-processor/3.4.4/spring-boot-autoconfigure-processor-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar:/home/ilabs-laph893/.m2/repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar:/home/ilabs-laph893/.m2/repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar:/home/ilabs-laph893/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/home/ilabs-laph893/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/home/ilabs-laph893/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/home/ilabs-laph893/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/ilabs-laph893/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/home/ilabs-laph893/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/ilabs-laph893/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.4/spring-boot-starter-test-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-test/3.4.4/spring-boot-test-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.4/spring-boot-test-autoconfigure-3.4.4.jar:/home/ilabs-laph893/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/ilabs-laph893/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/ilabs-laph893/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/ilabs-laph893/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/ilabs-laph893/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/home/ilabs-laph893/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/home/ilabs-laph893/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/home/ilabs-laph893/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/ilabs-laph893/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/home/ilabs-laph893/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ilabs-laph893/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/ilabs-laph893/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/ilabs-laph893/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/home/ilabs-laph893/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ilabs-laph893/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/home/ilabs-laph893/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/ilabs-laph893/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-test/6.2.5/spring-test-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/home/ilabs-laph893/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ilabs-laph893"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase1-core"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase1-core/target/surefire/surefirebooter-20260405225726632_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+7-Ubuntu-124.04"/>
+    <property name="user.name" value="ilabs-laph893"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.17.0-19-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ilabs-laph893/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase1-core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="537515"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.10+7-Ubuntu-124.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[phase1-core-test] "/>
+  </properties>
+  <testcase name="aop_context_proxy_is_accessible_because_exposeProxy_is_true" classname="com.techleadguru.phase1.day19.Day19SelfInvocationTest" time="1.076">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2026-04-05T22:57:28.550+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.p.day19.Day19SelfInvocationTest      : Starting Day19SelfInvocationTest using Java 21.0.10 with PID 537515 (started by ilabs-laph893 in /home/ilabs-laph893/Documents/personal/sprigboot/phase1-core)
+2026-04-05T22:57:28.554+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.p.day19.Day19SelfInvocationTest      : No active profile set, falling back to 1 default profile: "default"
+2026-04-05T22:57:29.536+05:30  INFO 537515 --- [phase1-core-test] [           main] ctoryPostProcessor$BeanDefinitionPrinter : [BFPP] ==============================================
+2026-04-05T22:57:29.536+05:30  INFO 537515 --- [phase1-core-test] [           main] ctoryPostProcessor$BeanDefinitionPrinter : [BFPP] Bean definitions registered: 169
+2026-04-05T22:57:29.538+05:30  INFO 537515 --- [phase1-core-test] [           main] ctoryPostProcessor$BeanDefinitionPrinter : [BFPP] Printing all definition names:
+2026-04-05T22:57:29.538+05:30  INFO 537515 --- [phase1-core-test] [           main] ctoryPostProcessor$BeanDefinitionPrinter : [BFPP] ==============================================
+2026-04-05T22:57:29.538+05:30  INFO 537515 --- [phase1-core-test] [           main] ctoryPostProcessor$BeanDefinitionPrinter : [BFPP] NOTE: Beans are NOT created yet at this point.
+2026-04-05T22:57:29.539+05:30  INFO 537515 --- [phase1-core-test] [           main] ctoryPostProcessor$BeanDefinitionPrinter : [BFPP] BeanFactoryPostProcessor runs BEFORE any bean instantiation.
+2026-04-05T22:57:29.539+05:30  INFO 537515 --- [phase1-core-test] [           main] anFactoryPostProcessor$ScopeModifierBFPP : [BFPP SCOPE CHANGE] 'reportingService' scope: singleton -> prototype
+2026-04-05T22:57:29.790+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.p.day06.Day06Scope$ShoppingCart      : [ShoppingCart] New cart created: id=95682931515806
+2026-04-05T22:57:29.841+05:30  INFO 537515 --- [phase1-core-test] [           main] yles$UserServiceWithConstructorInjection : [DAY 8] Constructor injection: deps injected at construction time
+2026-04-05T22:57:29.843+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [BPP VALIDATOR] @Service bean 'userServiceGood' registered and validated
+2026-04-05T22:57:29.846+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [BPP VALIDATOR] @Service bean 'userServiceBad' registered and validated
+2026-04-05T22:57:29.857+05:30  INFO 537515 --- [phase1-core-test] [           main] 11LazyAndObjectProvider$ReportController : [Day11] ReportController created — PdfService NOT yet instantiated
+2026-04-05T22:57:29.886+05:30  INFO 537515 --- [phase1-core-test] [           main] .p.d.Day11LazyAndObjectProvider$ServiceA : [Day11] ServiceA created
+2026-04-05T22:57:29.890+05:30  INFO 537515 --- [phase1-core-test] [           main] .p.d.Day11LazyAndObjectProvider$ServiceB : [Day11] ServiceB created
+2026-04-05T22:57:29.923+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [BPP VALIDATOR] @Service bean 'day18PointcutExpressions.AccountService' registered and validated
+2026-04-05T22:57:29.940+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'day19SelfInvocationTrap.AuditService' took 13ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:29.951+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'day19BrokenOrderService' took 8ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:29.963+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'fixedOrderServiceV1' took 8ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:29.973+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'fixedOrderServiceV2' took 8ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:29.995+05:30  INFO 537515 --- [phase1-core-test] [           main] ay03BeanLifecycle$DatabaseConnectionBean : [LIFECYCLE Step 1] Constructor called — properties NOT yet injected
+2026-04-05T22:57:30.001+05:30  INFO 537515 --- [phase1-core-test] [           main] ay03BeanLifecycle$DatabaseConnectionBean : [LIFECYCLE Step 3] @PostConstruct — dependencies injected, safe to use them
+2026-04-05T22:57:30.001+05:30  WARN 537515 --- [phase1-core-test] [           main] ay03BeanLifecycle$DatabaseConnectionBean : [LIFECYCLE DANGER]  If you open a DB connection here, Config Server props may not be injected yet!
+2026-04-05T22:57:30.002+05:30  WARN 537515 --- [phase1-core-test] [           main] ay03BeanLifecycle$DatabaseConnectionBean : [LIFECYCLE DANGER]  Use ApplicationRunner.run() for startup I/O instead.
+2026-04-05T22:57:30.002+05:30  INFO 537515 --- [phase1-core-test] [           main] ay03BeanLifecycle$DatabaseConnectionBean : [LIFECYCLE Step 4] InitializingBean.afterPropertiesSet() — runs after @PostConstruct
+2026-04-05T22:57:30.003+05:30  INFO 537515 --- [phase1-core-test] [           main] ay03BeanLifecycle$DatabaseConnectionBean : [LIFECYCLE Step 5] Custom init-method (from @Bean(initMethod=...)) — last init hook
+2026-04-05T22:57:30.017+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'slowDemoService' took 11ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:30.031+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [BPP VALIDATOR] @Service bean 'visaPaymentService' registered and validated
+2026-04-05T22:57:30.033+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [BPP VALIDATOR] @Service bean 'mastercardPaymentService' registered and validated
+2026-04-05T22:57:30.036+05:30  INFO 537515 --- [phase1-core-test] [           main] 09AutowiredResolution$OrderServiceByName : [Day09] OrderServiceByName wired: VisaPaymentService
+2026-04-05T22:57:30.038+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [BPP VALIDATOR] @Service bean 'orderServiceByName' registered and validated
+2026-04-05T22:57:30.039+05:30  INFO 537515 --- [phase1-core-test] [           main] owiredResolution$OrderServiceByQualifier : [Day09] OrderServiceByQualifier wired: MastercardPaymentService
+2026-04-05T22:57:30.041+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [BPP VALIDATOR] @Service bean 'orderServiceByQualifier' registered and validated
+2026-04-05T22:57:30.046+05:30  INFO 537515 --- [phase1-core-test] [           main] 11LazyAndObjectProvider$ReportController : [Day11] ReportController created — PdfService NOT yet instantiated
+2026-04-05T22:57:30.052+05:30  INFO 537515 --- [phase1-core-test] [           main] Day12OptionalInjection$MonitoringService : [Day12] MonitoringService created. Slack present: true
+2026-04-05T22:57:30.056+05:30  INFO 537515 --- [phase1-core-test] [           main] .p.d.Day13CircularDependency$AuthService : [Day13] AuthService created (no circular dep)
+2026-04-05T22:57:30.058+05:30  INFO 537515 --- [phase1-core-test] [           main] .p.d.Day13CircularDependency$UserService : [Day13] UserService created (no circular dep)
+2026-04-05T22:57:30.060+05:30  INFO 537515 --- [phase1-core-test] [           main] ay14ConfigurationCglib$TrackedDataSource : [Day14] TrackedDataSource #1 created: primary
+2026-04-05T22:57:30.063+05:30  INFO 537515 --- [phase1-core-test] [           main] ay14ConfigurationCglib$TrackedDataSource : [Day14] TrackedDataSource #2 created: primary
+2026-04-05T22:57:30.065+05:30  INFO 537515 --- [phase1-core-test] [           main] ay14ConfigurationCglib$TrackedDataSource : [Day14] TrackedDataSource #3 created: primary
+2026-04-05T22:57:30.066+05:30  INFO 537515 --- [phase1-core-test] [           main] ay14ConfigurationCglib$TrackedDataSource : [Day14] TrackedDataSource #4 created: primary
+2026-04-05T22:57:30.070+05:30  INFO 537515 --- [phase1-core-test] [           main] ay14ConfigurationCglib$TrackedDataSource : [Day14] TrackedDataSource #5 created: safe-primary
+2026-04-05T22:57:30.112+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'orderService' took 33ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:30.131+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'stripeGateway' took 14ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:30.140+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'emailService' took 7ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:30.157+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'reportService' took 8ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:30.180+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day21.AuditAutoConfiguration  : [AutoConfig] app.audit.enabled=true -> activating DefaultAuditLogger
+2026-04-05T22:57:30.181+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.phase1.day21.DefaultAuditLogger      : [AutoConfig] DefaultAuditLogger created (level=WARN)
+2026-04-05T22:57:30.338+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.phase1.day04.Day04BeanPostProcessor  : [SLOW BEAN INIT] 'applicationTaskExecutor' took 6ms — investigate if this is a BPP doing I/O
+2026-04-05T22:57:30.352+05:30  WARN 537515 --- [phase1-core-test] [           main] plicationEvents$DangerousStartupListener : [DANGEROUS] ContextRefreshedEvent fired! Count=1 | Context=org.springframework.context.annotation.AnnotationConfigApplicationContext@486be205
+2026-04-05T22:57:30.353+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.p.day19.Day19SelfInvocationTest      : Started Day19SelfInvocationTest in 2.309 seconds (process running for 3.641)
+=== DAY 2: Bean Registration ===
+Beans of type NotificationService registered:
+  Bean[emailNotification] -> EMAIL: Hello World
+  Bean[smsNotification] -> SMS: Hello World
+
+RULE: Use @Component for YOUR classes. Use @Bean for 3rd-party classes.
+RULE: If two @Component beans of same type collide -> use @Primary or @Qualifier.
+=================================
+=== DAY 6: Scope Bug Demo ===
+2026-04-05T22:57:30.361+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.p.d.Day06Scope$BrokenOrderService    : [BUG] Cart id=95682931515806 now has 1 items — shared across all users!
+2026-04-05T22:57:30.362+05:30  WARN 537515 --- [phase1-core-test] [           main] c.t.p.d.Day06Scope$BrokenOrderService    : [BUG] Cart id=95682931515806 now has 2 items — shared across all users!
+[BUG]  UserB's cart has: [userA:Laptop, userB:Phone]
+2026-04-05T22:57:30.363+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.p.day06.Day06Scope$ShoppingCart      : [ShoppingCart] New cart created: id=95683505082851
+2026-04-05T22:57:30.364+05:30  INFO 537515 --- [phase1-core-test] [           main] cope$FixedOrderServiceWithObjectProvider : [FIX-1] Fresh cart created: id=95683505082851
+2026-04-05T22:57:30.365+05:30  INFO 537515 --- [phase1-core-test] [           main] c.t.p.day06.Day06Scope$ShoppingCart      : [ShoppingCart] New cart created: id=95683506854634
+2026-04-05T22:57:30.366+05:30  INFO 537515 --- [phase1-core-test] [           main] cope$FixedOrderServiceWithObjectProvider : [FIX-1] Fresh cart created: id=95683506854634
+[FIX1] CartA: [Laptop] | CartB: [Phone]
+[FIX1] Same cart? false
+=============================
+=== DAY 19: Self-Invocation Trap ===
+
+THE RULE: Never call @Transactional/@Async/@Cacheable methods via this.xxx()
+WHY:      'this' is the RAW object, not the Spring proxy.
+FIX:      Extract to a separate @Component (always best).
+FIX:      Use AopContext.currentProxy() (needs exposeProxy=true).
+
+To see the TX names, start with a real DataSource (phase2-data module).
+In this phase, observe the log messages to understand the concept.
+====================================
+=== DAY 7: Custom Domain Events ===
+2026-04-05T22:57:30.368+05:30  INFO 537515 --- [phase1-core-test] [           main] t.p.d.Day07ApplicationEvents$UserService : [UserService] Registering user: U-001
+2026-04-05T22:57:30.369+05:30  INFO 537515 --- [phase1-core-test] [           main] p.d.Day07ApplicationEvents$AuditListener : [AUDIT LISTENER] Audit: user U-001 registered at 1775410050368
+2026-04-05T22:57:30.369+05:30  INFO 537515 --- [phase1-core-test] [           main] licationEvents$EmailNotificationListener : [EMAIL LISTENER] Sending welcome email to: alice@example.com
+2026-04-05T22:57:30.370+05:30  INFO 537515 --- [phase1-core-test] [           main] t.p.d.Day07ApplicationEvents$UserService : [UserService] Event published for user: U-001
+2026-04-05T22:57:30.370+05:30  INFO 537515 --- [phase1-core-test] [           main] t.p.d.Day07ApplicationEvents$UserService : [UserService] Registering user: U-002
+2026-04-05T22:57:30.370+05:30  INFO 537515 --- [phase1-core-test] [           main] p.d.Day07ApplicationEvents$AuditListener : [AUDIT LISTENER] Audit: user U-002 registered at 1775410050370
+2026-04-05T22:57:30.371+05:30  INFO 537515 --- [phase1-core-test] [           main] licationEvents$EmailNotificationListener : [EMAIL LISTENER] Sending welcome email to: bob@example.com
+2026-04-05T22:57:30.371+05:30  INFO 537515 --- [phase1-core-test] [           main] t.p.d.Day07ApplicationEvents$UserService : [UserService] Event published for user: U-002
+===================================
+RULE: For startup side effects, use ApplicationReadyEvent.
+RULE: ContextRefreshedEvent fires N times (once per context in MVC).
+=== DAY 8: Injection Styles ===
+[GOOD] getUser: User[42]
+
+RULE: Constructor injection only.
+RULE: @RequiredArgsConstructor (Lombok) generates it for you.
+RULE: No @Autowired on fields. Ever.
+================================
+=== DAY 1: BeanFactory vs ApplicationContext ===
+[ApplicationContext] Type : AnnotationConfigApplicationContext
+[ApplicationContext] Total beans registered: 169
+[ApplicationContext] First 5 beans: [org.springframework.context.annotation.internalConfigurationAnnotationProcessor, org.springframework.context.annotation.internalAutowiredAnnotationProcessor, org.springframework.context.annotation.internalCommonAnnotationProcessor, org.springframework.context.event.internalEventListenerProcessor, org.springframework.context.event.internalEventListenerFactory]
+
+  BeanFactory  = lazy, no events, no AOP auto-proxy
+  ApplicationContext = eager singletons + events + AOP + i18n
+  Spring Boot gives you ApplicationContext every time.
+  NEVER use BeanFactory in your own code — only exists inside framework internals.
+=================================================
+2026-04-05T22:57:30.374+05:30  INFO 537515 --- [phase1-core-test] [           main] y07ApplicationEvents$SafeStartupListener : [SAFE] ApplicationReadyEvent fired — exactly once — safe for startup logic!
+[DAY 19] AopContext is correctly configured.
+[DAY 19] IllegalStateException here is normal — we are not inside a proxied call.
+[DAY 19] The proxy IS available inside @Transactional / @Around methods.
+]]></system-out>
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="self_invocation_runs_in_same_transaction" classname="com.techleadguru.phase1.day19.Day19SelfInvocationTest" time="0.017">
+    <error message="Cannot activate transaction synchronization - already active" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Cannot activate transaction synchronization - already active
+	at org.springframework.transaction.support.TransactionSynchronizationManager.initSynchronization(TransactionSynchronizationManager.java:256)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.prepareSynchronization(AbstractPlatformTransactionManager.java:583)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:538)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:103)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:248)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:237)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></error>
+    <system-out><![CDATA[2026-04-05T22:57:31.466+05:30  WARN 537515 --- [phase1-core-test] [           main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] for test method [void com.techleadguru.phase1.day19.Day19SelfInvocationTest.self_invocation_runs_in_same_transaction()] and test instance [com.techleadguru.phase1.day19.Day19SelfInvocationTest@6de43bc1]
+
+java.lang.IllegalStateException: Cannot activate transaction synchronization - already active
+	at org.springframework.transaction.support.TransactionSynchronizationManager.initSynchronization(TransactionSynchronizationManager.java:256) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.prepareSynchronization(AbstractPlatformTransactionManager.java:583) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:538) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:103) ~[spring-test-6.2.5.jar:6.2.5]
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:248) ~[spring-test-6.2.5.jar:6.2.5]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320) ~[spring-test-6.2.5.jar:6.2.5]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:237) ~[spring-test-6.2.5.jar:6.2.5]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$3(TestMethodTestDescriptor.java:166) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$7(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:165) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:132) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.2.5.jar:3.2.5]
+
+]]></system-out>
+  </testcase>
+  <testcase name="transactional_on_private_method_is_always_ignored" classname="com.techleadguru.phase1.day19.Day19SelfInvocationTest" time="0.006">
+    <system-out><![CDATA[[DAY 19] @Transactional on private methods is SILENTLY IGNORED.
+[DAY 19] Why: proxy cannot override private methods (Java restriction).
+[DAY 19] Spring 6.0+ logs a warning when it detects this pattern.
+[DAY 19] FIX: Make the method public and call via a separate bean.
+]]></system-out>
+  </testcase>
+</testsuite>

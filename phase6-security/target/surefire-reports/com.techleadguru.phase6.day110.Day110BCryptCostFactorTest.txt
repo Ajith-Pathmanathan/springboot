@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.techleadguru.phase6.day110.Day110BCryptCostFactorTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.376 s -- in com.techleadguru.phase6.day110.Day110BCryptCostFactorTest

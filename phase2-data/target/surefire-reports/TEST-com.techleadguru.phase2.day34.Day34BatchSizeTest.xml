@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.techleadguru.phase2.day34.Day34BatchSizeTest" time="0.377" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase2-data/target/test-classes:/home/ilabs-laph893/Documents/personal/sprigboot/phase2-data/target/classes:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.4.4/spring-boot-starter-data-jpa-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.4/spring-boot-starter-jdbc-3.4.4.jar:/home/ilabs-laph893/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-jdbc/6.2.5/spring-jdbc-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/hibernate/orm/hibernate-core/6.6.11.Final/hibernate-core-6.6.11.Final.jar:/home/ilabs-laph893/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/ilabs-laph893/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/ilabs-laph893/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/home/ilabs-laph893/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/home/ilabs-laph893/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/ilabs-laph893/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/ilabs-laph893/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/ilabs-laph893/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/ilabs-laph893/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/ilabs-laph893/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/ilabs-laph893/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/ilabs-laph893/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/ilabs-laph893/.m2/repository/org/springframework/data/spring-data-jpa/3.4.4/spring-data-jpa-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/data/spring-data-commons/3.4.4/spring-data-commons-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-orm/6.2.5/spring-orm-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-aspects/6.2.5/spring-aspects-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/aspectj/aspectjweaver/1.9.23/aspectjweaver-1.9.23.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.4/spring-boot-starter-web-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.4/spring-boot-starter-json-3.4.4.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.3/jackson-module-parameter-names-2.18.3.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.4/spring-boot-starter-tomcat-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.39/tomcat-embed-core-10.1.39.jar:/home/ilabs-laph893/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.39/tomcat-embed-el-10.1.39.jar:/home/ilabs-laph893/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.39/tomcat-embed-websocket-10.1.39.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-web/6.2.5/spring-web-6.2.5.jar:/home/ilabs-laph893/.m2/repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar:/home/ilabs-laph893/.m2/repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-webmvc/6.2.5/spring-webmvc-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/postgresql/postgresql/42.7.5/postgresql-42.7.5.jar:/home/ilabs-laph893/.m2/repository/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar:/home/ilabs-laph893/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/home/ilabs-laph893/.m2/repository/org/flywaydb/flyway-core/10.20.1/flyway-core-10.20.1.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-toml/2.18.3/jackson-dataformat-toml-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/home/ilabs-laph893/.m2/repository/org/flywaydb/flyway-database-postgresql/10.20.1/flyway-database-postgresql-10.20.1.jar:/home/ilabs-laph893/.m2/repository/com/github/gavlyukovskiy/p6spy-spring-boot-starter/1.9.2/p6spy-spring-boot-starter-1.9.2.jar:/home/ilabs-laph893/.m2/repository/com/github/gavlyukovskiy/datasource-decorator-spring-boot-autoconfigure/1.9.2/datasource-decorator-spring-boot-autoconfigure-1.9.2.jar:/home/ilabs-laph893/.m2/repository/p6spy/p6spy/3.9.1/p6spy-3.9.1.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/junit-jupiter/1.20.6/junit-jupiter-1.20.6.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/testcontainers/1.20.6/testcontainers-1.20.6.jar:/home/ilabs-laph893/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/ilabs-laph893/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/ilabs-laph893/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/ilabs-laph893/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/ilabs-laph893/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/ilabs-laph893/.m2/repository/com/github/docker-java/docker-java-api/3.4.1/docker-java-api-3.4.1.jar:/home/ilabs-laph893/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.4.1/docker-java-transport-zerodep-3.4.1.jar:/home/ilabs-laph893/.m2/repository/com/github/docker-java/docker-java-transport/3.4.1/docker-java-transport-3.4.1.jar:/home/ilabs-laph893/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/postgresql/1.20.6/postgresql-1.20.6.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/jdbc/1.20.6/jdbc-1.20.6.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/database-commons/1.20.6/database-commons-1.20.6.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar:/home/ilabs-laph893/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/home/ilabs-laph893/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/home/ilabs-laph893/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/home/ilabs-laph893/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/ilabs-laph893/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/home/ilabs-laph893/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.4/spring-boot-starter-test-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-test/3.4.4/spring-boot-test-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.4/spring-boot-test-autoconfigure-3.4.4.jar:/home/ilabs-laph893/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/ilabs-laph893/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/ilabs-laph893/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/ilabs-laph893/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/home/ilabs-laph893/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/home/ilabs-laph893/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/home/ilabs-laph893/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/home/ilabs-laph893/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/home/ilabs-laph893/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ilabs-laph893/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/ilabs-laph893/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/ilabs-laph893/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/home/ilabs-laph893/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ilabs-laph893/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/home/ilabs-laph893/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/ilabs-laph893/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-test/6.2.5/spring-test-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/home/ilabs-laph893/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="p6spy.config.logMessageFormat" value="com.p6spy.engine.spy.appender.MultiLineFormat"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="phase2-data"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase2-data/target/surefire/surefirebooter-20260404232902227_3.jar /home/ilabs-laph893/Documents/personal/sprigboot/phase2-data/target/surefire 2026-04-04T23-29-02_150-jvmRun1 surefire-20260404232902227_1tmp surefire_0-20260404232902227_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase2-data/target/test-classes:/home/ilabs-laph893/Documents/personal/sprigboot/phase2-data/target/classes:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.4.4/spring-boot-starter-data-jpa-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.4/spring-boot-starter-jdbc-3.4.4.jar:/home/ilabs-laph893/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-jdbc/6.2.5/spring-jdbc-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/hibernate/orm/hibernate-core/6.6.11.Final/hibernate-core-6.6.11.Final.jar:/home/ilabs-laph893/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/ilabs-laph893/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/ilabs-laph893/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/home/ilabs-laph893/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/home/ilabs-laph893/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/ilabs-laph893/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/ilabs-laph893/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/ilabs-laph893/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/ilabs-laph893/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/ilabs-laph893/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/ilabs-laph893/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/ilabs-laph893/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/ilabs-laph893/.m2/repository/org/springframework/data/spring-data-jpa/3.4.4/spring-data-jpa-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/data/spring-data-commons/3.4.4/spring-data-commons-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-orm/6.2.5/spring-orm-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-aspects/6.2.5/spring-aspects-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/aspectj/aspectjweaver/1.9.23/aspectjweaver-1.9.23.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.4/spring-boot-starter-web-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.4/spring-boot-starter-json-3.4.4.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.3/jackson-module-parameter-names-2.18.3.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.4/spring-boot-starter-tomcat-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.39/tomcat-embed-core-10.1.39.jar:/home/ilabs-laph893/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.39/tomcat-embed-el-10.1.39.jar:/home/ilabs-laph893/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.39/tomcat-embed-websocket-10.1.39.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-web/6.2.5/spring-web-6.2.5.jar:/home/ilabs-laph893/.m2/repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar:/home/ilabs-laph893/.m2/repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-webmvc/6.2.5/spring-webmvc-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/postgresql/postgresql/42.7.5/postgresql-42.7.5.jar:/home/ilabs-laph893/.m2/repository/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar:/home/ilabs-laph893/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/home/ilabs-laph893/.m2/repository/org/flywaydb/flyway-core/10.20.1/flyway-core-10.20.1.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-toml/2.18.3/jackson-dataformat-toml-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar:/home/ilabs-laph893/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/home/ilabs-laph893/.m2/repository/org/flywaydb/flyway-database-postgresql/10.20.1/flyway-database-postgresql-10.20.1.jar:/home/ilabs-laph893/.m2/repository/com/github/gavlyukovskiy/p6spy-spring-boot-starter/1.9.2/p6spy-spring-boot-starter-1.9.2.jar:/home/ilabs-laph893/.m2/repository/com/github/gavlyukovskiy/datasource-decorator-spring-boot-autoconfigure/1.9.2/datasource-decorator-spring-boot-autoconfigure-1.9.2.jar:/home/ilabs-laph893/.m2/repository/p6spy/p6spy/3.9.1/p6spy-3.9.1.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/junit-jupiter/1.20.6/junit-jupiter-1.20.6.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/testcontainers/1.20.6/testcontainers-1.20.6.jar:/home/ilabs-laph893/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/ilabs-laph893/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/ilabs-laph893/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/ilabs-laph893/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/ilabs-laph893/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/ilabs-laph893/.m2/repository/com/github/docker-java/docker-java-api/3.4.1/docker-java-api-3.4.1.jar:/home/ilabs-laph893/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.4.1/docker-java-transport-zerodep-3.4.1.jar:/home/ilabs-laph893/.m2/repository/com/github/docker-java/docker-java-transport/3.4.1/docker-java-transport-3.4.1.jar:/home/ilabs-laph893/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/postgresql/1.20.6/postgresql-1.20.6.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/jdbc/1.20.6/jdbc-1.20.6.jar:/home/ilabs-laph893/.m2/repository/org/testcontainers/database-commons/1.20.6/database-commons-1.20.6.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar:/home/ilabs-laph893/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/home/ilabs-laph893/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/home/ilabs-laph893/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/home/ilabs-laph893/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/ilabs-laph893/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/home/ilabs-laph893/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.4/spring-boot-starter-test-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-test/3.4.4/spring-boot-test-3.4.4.jar:/home/ilabs-laph893/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.4/spring-boot-test-autoconfigure-3.4.4.jar:/home/ilabs-laph893/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/ilabs-laph893/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/ilabs-laph893/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/ilabs-laph893/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/home/ilabs-laph893/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/home/ilabs-laph893/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/home/ilabs-laph893/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/home/ilabs-laph893/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/home/ilabs-laph893/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ilabs-laph893/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/ilabs-laph893/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/ilabs-laph893/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/ilabs-laph893/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/home/ilabs-laph893/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/home/ilabs-laph893/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ilabs-laph893/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/home/ilabs-laph893/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/ilabs-laph893/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ilabs-laph893/.m2/repository/org/springframework/spring-test/6.2.5/spring-test-6.2.5.jar:/home/ilabs-laph893/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/home/ilabs-laph893/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ilabs-laph893"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="p6spy.config.appender" value="com.p6spy.engine.spy.appender.Slf4JLogger"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase2-data"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase2-data/target/surefire/surefirebooter-20260404232902227_3.jar"/>
+    <property name="p6spy.config.modulelist" value="com.p6spy.engine.spy.P6SpyFactory,com.p6spy.engine.logging.P6LogFactory"/>
+    <property name="polyglot.engine.WarnInterpreterOnly" value="false"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+7-Ubuntu-124.04"/>
+    <property name="p6spy.config.logfile" value="spy.log"/>
+    <property name="user.name" value="ilabs-laph893"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.17.0-19-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ilabs-laph893/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="/home/ilabs-laph893/Documents/personal/sprigboot/phase2-data"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="99102"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.10+7-Ubuntu-124.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[phase2-data] "/>
+  </properties>
+  <testcase name="batchSize_singleOrder_correctItems" classname="com.techleadguru.phase2.day34.Day34BatchSizeTest" time="0.062">
+    <system-out><![CDATA[2026-04-04T23:29:11.820+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+Hibernate: select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+2026-04-04T23:29:11.821+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551821 | took 0ms | statement | connection 43| url jdbc:h2:mem:phase2db
+select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0;
+2026-04-04T23:29:11.823+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0, time: 0ms, rows: 0
+2026-04-04T23:29:11.823+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551823 | took 0ms | commit | connection 43| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.824+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    202901 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    398483 nanoseconds spent preparing 1 JDBC statements;
+    1244449 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    9567 nanoseconds spent executing 1 pre-partial-flushes;
+    11230 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.826+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+Hibernate: select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+2026-04-04T23:29:11.827+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551827 | took 0ms | statement | connection 44| url jdbc:h2:mem:phase2db
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0;
+2026-04-04T23:29:11.829+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0, time: 1ms, rows: 3
+2026-04-04T23:29:11.831+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+2026-04-04T23:29:11.832+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551832 | took 0ms | statement | connection 44| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in ('f117cbd9-ba46-45ab-ba86-315a6ef7c7ad','0cd3b6d0-a918-4194-9c8a-5326d9453a71','82b1bfe8-bded-41f4-a325-b08305b3ff33',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+2026-04-04T23:29:11.834+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.835+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551835 | took 0ms | statement | connection 44| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='f117cbd9-ba46-45ab-ba86-315a6ef7c7ad' and version=0;
+2026-04-04T23:29:11.836+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.837+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551837 | took 0ms | statement | connection 44| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='0cd3b6d0-a918-4194-9c8a-5326d9453a71' and version=0;
+2026-04-04T23:29:11.837+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.838+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551838 | took 0ms | statement | connection 44| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='82b1bfe8-bded-41f4-a325-b08305b3ff33' and version=0;
+2026-04-04T23:29:11.839+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551839 | took 0ms | commit | connection 44| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.842+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    214751 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    289081 nanoseconds spent preparing 5 JDBC statements;
+    3265057 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4845155 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 3 collections);
+    9429 nanoseconds spent executing 1 pre-partial-flushes;
+    8663 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.847+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.848+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551848 | took 0ms | statement | connection 45| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-single',0,'80d0f307-629e-4cf4-8fd0-16fefa16c2a6');
+2026-04-04T23:29:11.848+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.849+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551849 | took 0ms | statement | connection 45| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('80d0f307-629e-4cf4-8fd0-16fefa16c2a6',5.00,'Laptop',1,'35c7bdb3-2a0e-45d1-bf36-99400f527802');
+2026-04-04T23:29:11.849+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.850+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551850 | took 0ms | statement | connection 45| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('80d0f307-629e-4cf4-8fd0-16fefa16c2a6',5.00,'Charger',1,'78b11034-470e-4908-9e6b-e2136ad29c88');
+2026-04-04T23:29:11.851+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.852+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551851 | took 0ms | statement | connection 45| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('80d0f307-629e-4cf4-8fd0-16fefa16c2a6',5.00,'Bag',1,'b931162c-accf-4a6c-bc44-be4fbe4e5597');
+2026-04-04T23:29:11.852+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551852 | took 0ms | commit | connection 45| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.853+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    525980 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    350446 nanoseconds spent preparing 4 JDBC statements;
+    2708394 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5931711 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.855+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+Hibernate: select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+2026-04-04T23:29:11.856+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551856 | took 0ms | statement | connection 46| url jdbc:h2:mem:phase2db
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0;
+2026-04-04T23:29:11.856+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0, time: 0ms, rows: 1
+2026-04-04T23:29:11.857+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Loading 1 orders — @BatchSize(10) will batch item queries
+2026-04-04T23:29:11.859+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+2026-04-04T23:29:11.859+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551859 | took 0ms | statement | connection 46| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id='80d0f307-629e-4cf4-8fd0-16fefa16c2a6';
+2026-04-04T23:29:11.865+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 80d0f307-629e-4cf4-8fd0-16fefa16c2a6 has 3 items (loaded via batch)
+2026-04-04T23:29:11.865+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551865 | took 0ms | commit | connection 46| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.867+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    160521 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    112893 nanoseconds spent preparing 2 JDBC statements;
+    701053 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    4866 nanoseconds spent executing 1 pre-partial-flushes;
+    5553 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-out>
+  </testcase>
+  <testcase name="batchSize_exactlyBatchBoundary_correctResults" classname="com.techleadguru.phase2.day34.Day34BatchSizeTest" time="0.09">
+    <system-out><![CDATA[2026-04-04T23:29:11.878+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+Hibernate: select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+2026-04-04T23:29:11.878+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551878 | took 0ms | statement | connection 47| url jdbc:h2:mem:phase2db
+select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0;
+2026-04-04T23:29:11.880+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0, time: 1ms, rows: 3
+2026-04-04T23:29:11.883+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.884+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551884 | took 0ms | statement | connection 47| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='35c7bdb3-2a0e-45d1-bf36-99400f527802';
+2026-04-04T23:29:11.884+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.885+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551885 | took 0ms | statement | connection 47| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='78b11034-470e-4908-9e6b-e2136ad29c88';
+2026-04-04T23:29:11.885+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.886+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551886 | took 0ms | statement | connection 47| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='b931162c-accf-4a6c-bc44-be4fbe4e5597';
+2026-04-04T23:29:11.886+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551886 | took 0ms | commit | connection 47| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.887+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    204110 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    398199 nanoseconds spent preparing 4 JDBC statements;
+    2087541 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4869611 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 0 collections);
+    7960 nanoseconds spent executing 1 pre-partial-flushes;
+    8673 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.890+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+Hibernate: select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+2026-04-04T23:29:11.890+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551890 | took 0ms | statement | connection 48| url jdbc:h2:mem:phase2db
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0;
+2026-04-04T23:29:11.891+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0, time: 0ms, rows: 1
+2026-04-04T23:29:11.893+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+2026-04-04T23:29:11.894+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551894 | took 0ms | statement | connection 48| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id='80d0f307-629e-4cf4-8fd0-16fefa16c2a6';
+2026-04-04T23:29:11.895+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.896+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551896 | took 0ms | statement | connection 48| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='80d0f307-629e-4cf4-8fd0-16fefa16c2a6' and version=0;
+2026-04-04T23:29:11.896+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551896 | took 0ms | commit | connection 48| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.897+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    206378 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    170299 nanoseconds spent preparing 3 JDBC statements;
+    1216070 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1456855 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 1 collections);
+    8105 nanoseconds spent executing 1 pre-partial-flushes;
+    7563 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.900+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.901+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551901 | took 0ms | statement | connection 49| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-0',0,'8bf94169-d8d2-4106-b913-9d1341bca26b');
+2026-04-04T23:29:11.901+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.902+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551902 | took 0ms | statement | connection 49| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('8bf94169-d8d2-4106-b913-9d1341bca26b',5.00,'P-0',1,'8bbee355-a4c1-4d94-a3d9-70cd066694c1');
+2026-04-04T23:29:11.903+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551903 | took 0ms | commit | connection 49| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.903+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    260083 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    109692 nanoseconds spent preparing 2 JDBC statements;
+    1424739 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3220833 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.906+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.906+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551906 | took 0ms | statement | connection 50| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-1',0,'a81458d8-1716-488a-b96f-97171aa23b57');
+2026-04-04T23:29:11.907+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.907+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551907 | took 0ms | statement | connection 50| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('a81458d8-1716-488a-b96f-97171aa23b57',5.00,'P-1',1,'fff7e8de-2d38-4b4e-a24d-0680d1da5e55');
+2026-04-04T23:29:11.908+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551908 | took 0ms | commit | connection 50| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.908+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    178714 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    87650 nanoseconds spent preparing 2 JDBC statements;
+    996090 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3150863 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.911+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.912+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551911 | took 0ms | statement | connection 51| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-2',0,'5370345f-4821-477a-867b-ffbc14a2b0f5');
+2026-04-04T23:29:11.912+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.913+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551913 | took 0ms | statement | connection 51| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('5370345f-4821-477a-867b-ffbc14a2b0f5',5.00,'P-2',1,'f559c40a-0b21-4609-8936-252229f33af8');
+2026-04-04T23:29:11.914+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551914 | took 0ms | commit | connection 51| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.914+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    176579 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    117109 nanoseconds spent preparing 2 JDBC statements;
+    1308058 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3158287 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.917+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.917+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551917 | took 0ms | statement | connection 52| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-3',0,'80b69e9a-c84e-4e6b-af5d-3cfcf0476a60');
+2026-04-04T23:29:11.918+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.919+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551919 | took 0ms | statement | connection 52| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('80b69e9a-c84e-4e6b-af5d-3cfcf0476a60',5.00,'P-3',1,'cec58f15-d723-4005-8e3c-38829d02295a');
+2026-04-04T23:29:11.919+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551919 | took 0ms | commit | connection 52| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.920+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    223231 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    120801 nanoseconds spent preparing 2 JDBC statements;
+    1201345 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2943206 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.922+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.923+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551923 | took 0ms | statement | connection 53| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-4',0,'3f3c2cb3-55bf-4e5f-a51b-f49ed7f7e00f');
+2026-04-04T23:29:11.923+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.924+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551924 | took 0ms | statement | connection 53| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('3f3c2cb3-55bf-4e5f-a51b-f49ed7f7e00f',5.00,'P-4',1,'33034715-8aa9-4df7-a638-f797ef857985');
+2026-04-04T23:29:11.924+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551924 | took 0ms | commit | connection 53| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.924+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    142276 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    65827 nanoseconds spent preparing 2 JDBC statements;
+    887238 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2879220 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.926+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.927+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551927 | took 0ms | statement | connection 54| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-5',0,'6891c53c-a91d-462c-84fe-e47106a5b69e');
+2026-04-04T23:29:11.927+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.928+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551928 | took 0ms | statement | connection 54| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('6891c53c-a91d-462c-84fe-e47106a5b69e',5.00,'P-5',1,'e72494fe-92b4-4e85-8c7e-e43ed28b15b9');
+2026-04-04T23:29:11.929+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551929 | took 0ms | commit | connection 54| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.929+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    120778 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    85549 nanoseconds spent preparing 2 JDBC statements;
+    1250150 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2670296 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.931+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.931+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551931 | took 0ms | statement | connection 55| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-6',0,'67939dab-9ce6-4957-a604-2c74e019ec1b');
+2026-04-04T23:29:11.932+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.932+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551932 | took 0ms | statement | connection 55| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('67939dab-9ce6-4957-a604-2c74e019ec1b',5.00,'P-6',1,'6c6ee49a-2514-469f-8dcb-b3d9a220a6bc');
+2026-04-04T23:29:11.933+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551933 | took 0ms | commit | connection 55| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.933+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    124839 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    77813 nanoseconds spent preparing 2 JDBC statements;
+    1077322 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2488094 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.935+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.935+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551935 | took 0ms | statement | connection 56| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-7',0,'491f1da6-b3c1-4b9c-94f4-973d09aee3d5');
+2026-04-04T23:29:11.935+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.936+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551936 | took 0ms | statement | connection 56| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('491f1da6-b3c1-4b9c-94f4-973d09aee3d5',5.00,'P-7',1,'c0e27a05-8ee0-4fde-81c0-7dc64e1801fe');
+2026-04-04T23:29:11.936+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551936 | took 0ms | commit | connection 56| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.937+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    134268 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    63955 nanoseconds spent preparing 2 JDBC statements;
+    730403 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1996646 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.938+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.939+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551939 | took 0ms | statement | connection 57| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-8',0,'8ba45864-00b4-4ebe-b268-2a6f4685cfc2');
+2026-04-04T23:29:11.939+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.940+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551940 | took 0ms | statement | connection 57| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('8ba45864-00b4-4ebe-b268-2a6f4685cfc2',5.00,'P-8',1,'328bbe01-14ee-4437-b89e-699e17e5bf8b');
+2026-04-04T23:29:11.940+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551940 | took 0ms | commit | connection 57| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.941+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    143380 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    72646 nanoseconds spent preparing 2 JDBC statements;
+    790095 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2126159 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.943+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.944+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551944 | took 0ms | statement | connection 58| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-boundary-9',0,'41366ab8-413e-4075-836a-e72c8fc5a78f');
+2026-04-04T23:29:11.944+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:11.945+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551945 | took 0ms | statement | connection 58| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('41366ab8-413e-4075-836a-e72c8fc5a78f',5.00,'P-9',1,'9ce683d7-5b04-4759-a897-f91bb469c4e1');
+2026-04-04T23:29:11.945+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551945 | took 0ms | commit | connection 58| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.945+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    138610 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    66785 nanoseconds spent preparing 2 JDBC statements;
+    1064429 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2852927 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.948+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+Hibernate: select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+2026-04-04T23:29:11.948+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551948 | took 0ms | statement | connection 59| url jdbc:h2:mem:phase2db
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0;
+2026-04-04T23:29:11.950+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0, time: 1ms, rows: 10
+2026-04-04T23:29:11.951+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Loading 10 orders — @BatchSize(10) will batch item queries
+2026-04-04T23:29:11.953+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+2026-04-04T23:29:11.954+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551954 | took 0ms | statement | connection 59| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in ('8bf94169-d8d2-4106-b913-9d1341bca26b','a81458d8-1716-488a-b96f-97171aa23b57','5370345f-4821-477a-867b-ffbc14a2b0f5','80b69e9a-c84e-4e6b-af5d-3cfcf0476a60','3f3c2cb3-55bf-4e5f-a51b-f49ed7f7e00f','6891c53c-a91d-462c-84fe-e47106a5b69e','67939dab-9ce6-4957-a604-2c74e019ec1b','491f1da6-b3c1-4b9c-94f4-973d09aee3d5','8ba45864-00b4-4ebe-b268-2a6f4685cfc2','41366ab8-413e-4075-836a-e72c8fc5a78f');
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 8bf94169-d8d2-4106-b913-9d1341bca26b has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order a81458d8-1716-488a-b96f-97171aa23b57 has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 5370345f-4821-477a-867b-ffbc14a2b0f5 has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 80b69e9a-c84e-4e6b-af5d-3cfcf0476a60 has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 3f3c2cb3-55bf-4e5f-a51b-f49ed7f7e00f has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 6891c53c-a91d-462c-84fe-e47106a5b69e has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 67939dab-9ce6-4957-a604-2c74e019ec1b has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 491f1da6-b3c1-4b9c-94f4-973d09aee3d5 has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 8ba45864-00b4-4ebe-b268-2a6f4685cfc2 has 1 items (loaded via batch)
+2026-04-04T23:29:11.957+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 41366ab8-413e-4075-836a-e72c8fc5a78f has 1 items (loaded via batch)
+2026-04-04T23:29:11.958+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551958 | took 0ms | commit | connection 59| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.958+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    133909 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    127619 nanoseconds spent preparing 2 JDBC statements;
+    1313400 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    4179 nanoseconds spent executing 1 pre-partial-flushes;
+    7249 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[Day34] @BatchSize(10) on 10 orders = 1 batch IN query instead of 10 individual queries
+]]></system-out>
+  </testcase>
+  <testcase name="batchSize_reducesQueryCount_correctResults" classname="com.techleadguru.phase2.day34.Day34BatchSizeTest" time="0.141">
+    <system-out><![CDATA[2026-04-04T23:29:11.967+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+Hibernate: select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+2026-04-04T23:29:11.967+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551967 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0;
+2026-04-04T23:29:11.969+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0, time: 2ms, rows: 10
+2026-04-04T23:29:11.971+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.972+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551972 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='8bbee355-a4c1-4d94-a3d9-70cd066694c1';
+2026-04-04T23:29:11.972+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.973+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551973 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='fff7e8de-2d38-4b4e-a24d-0680d1da5e55';
+2026-04-04T23:29:11.973+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.973+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551973 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='f559c40a-0b21-4609-8936-252229f33af8';
+2026-04-04T23:29:11.974+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.974+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551974 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='cec58f15-d723-4005-8e3c-38829d02295a';
+2026-04-04T23:29:11.974+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.975+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551975 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='33034715-8aa9-4df7-a638-f797ef857985';
+2026-04-04T23:29:11.975+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.976+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551976 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='e72494fe-92b4-4e85-8c7e-e43ed28b15b9';
+2026-04-04T23:29:11.976+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.977+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551977 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='6c6ee49a-2514-469f-8dcb-b3d9a220a6bc';
+2026-04-04T23:29:11.977+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.978+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551978 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='c0e27a05-8ee0-4fde-81c0-7dc64e1801fe';
+2026-04-04T23:29:11.978+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.979+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551978 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='328bbe01-14ee-4437-b89e-699e17e5bf8b';
+2026-04-04T23:29:11.979+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:11.979+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551979 | took 0ms | statement | connection 60| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='9ce683d7-5b04-4759-a897-f91bb469c4e1';
+2026-04-04T23:29:11.980+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551980 | took 0ms | commit | connection 60| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:11.981+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    201261 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    376651 nanoseconds spent preparing 11 JDBC statements;
+    4925831 nanoseconds spent executing 11 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    8782922 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 0 collections);
+    6592 nanoseconds spent executing 1 pre-partial-flushes;
+    5173 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:11.983+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+Hibernate: select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+2026-04-04T23:29:11.984+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551984 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0;
+2026-04-04T23:29:11.986+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0, time: 2ms, rows: 10
+2026-04-04T23:29:11.988+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+2026-04-04T23:29:11.989+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551989 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in ('8bf94169-d8d2-4106-b913-9d1341bca26b','a81458d8-1716-488a-b96f-97171aa23b57','5370345f-4821-477a-867b-ffbc14a2b0f5','80b69e9a-c84e-4e6b-af5d-3cfcf0476a60','3f3c2cb3-55bf-4e5f-a51b-f49ed7f7e00f','6891c53c-a91d-462c-84fe-e47106a5b69e','67939dab-9ce6-4957-a604-2c74e019ec1b','491f1da6-b3c1-4b9c-94f4-973d09aee3d5','8ba45864-00b4-4ebe-b268-2a6f4685cfc2','41366ab8-413e-4075-836a-e72c8fc5a78f');
+2026-04-04T23:29:11.992+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.993+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551993 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='8bf94169-d8d2-4106-b913-9d1341bca26b' and version=0;
+2026-04-04T23:29:11.993+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.994+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551993 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='a81458d8-1716-488a-b96f-97171aa23b57' and version=0;
+2026-04-04T23:29:11.994+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.994+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551994 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='5370345f-4821-477a-867b-ffbc14a2b0f5' and version=0;
+2026-04-04T23:29:11.995+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.996+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551996 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='80b69e9a-c84e-4e6b-af5d-3cfcf0476a60' and version=0;
+2026-04-04T23:29:11.996+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.997+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551997 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='3f3c2cb3-55bf-4e5f-a51b-f49ed7f7e00f' and version=0;
+2026-04-04T23:29:11.997+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.997+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551997 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='6891c53c-a91d-462c-84fe-e47106a5b69e' and version=0;
+2026-04-04T23:29:11.998+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:11.999+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325551999 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='67939dab-9ce6-4957-a604-2c74e019ec1b' and version=0;
+2026-04-04T23:29:11.999+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.000+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552000 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='491f1da6-b3c1-4b9c-94f4-973d09aee3d5' and version=0;
+2026-04-04T23:29:12.001+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.002+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552002 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='8ba45864-00b4-4ebe-b268-2a6f4685cfc2' and version=0;
+2026-04-04T23:29:12.002+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.003+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552003 | took 0ms | statement | connection 61| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='41366ab8-413e-4075-836a-e72c8fc5a78f' and version=0;
+2026-04-04T23:29:12.004+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552004 | took 0ms | commit | connection 61| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.004+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    222878 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    514491 nanoseconds spent preparing 12 JDBC statements;
+    7015150 nanoseconds spent executing 12 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    11865573 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 10 collections);
+    10277 nanoseconds spent executing 1 pre-partial-flushes;
+    7367 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.007+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.008+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552008 | took 0ms | statement | connection 62| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-0',0,'f3a7b73f-76bd-4842-b97c-7228bb615a42');
+2026-04-04T23:29:12.008+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.009+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552009 | took 0ms | statement | connection 62| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('f3a7b73f-76bd-4842-b97c-7228bb615a42',5.00,'Item-A-0',1,'8b8673c7-34ac-457e-8d8f-75cdf98aaa7e');
+2026-04-04T23:29:12.009+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.010+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552010 | took 0ms | statement | connection 62| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('f3a7b73f-76bd-4842-b97c-7228bb615a42',5.00,'Item-B-0',1,'cdcf2e69-1b9a-4654-9c8f-68da3aa6336b');
+2026-04-04T23:29:12.011+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552011 | took 0ms | commit | connection 62| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.011+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    184235 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    175652 nanoseconds spent preparing 3 JDBC statements;
+    1666281 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3774037 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.014+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.015+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552015 | took 0ms | statement | connection 63| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-1',0,'045b7244-b5cc-4cb6-a6ea-e8f2866a1540');
+2026-04-04T23:29:12.016+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.016+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552016 | took 0ms | statement | connection 63| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('045b7244-b5cc-4cb6-a6ea-e8f2866a1540',5.00,'Item-A-1',1,'5dfc2a32-a045-47e8-be76-bfdea55be330');
+2026-04-04T23:29:12.017+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.017+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552017 | took 0ms | statement | connection 63| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('045b7244-b5cc-4cb6-a6ea-e8f2866a1540',5.00,'Item-B-1',1,'2eddde2b-f556-4a38-aa0f-b72605f09a6a');
+2026-04-04T23:29:12.018+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552018 | took 0ms | commit | connection 63| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.019+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    193128 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    139927 nanoseconds spent preparing 3 JDBC statements;
+    1938401 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4610779 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.022+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.022+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552022 | took 0ms | statement | connection 64| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-2',0,'7bbb6673-5636-4f03-ae97-683fa49c3d41');
+2026-04-04T23:29:12.023+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.023+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552023 | took 0ms | statement | connection 64| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('7bbb6673-5636-4f03-ae97-683fa49c3d41',5.00,'Item-A-2',1,'912627dc-4a7e-451e-803b-ab9b8e1c5695');
+2026-04-04T23:29:12.024+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.025+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552025 | took 0ms | statement | connection 64| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('7bbb6673-5636-4f03-ae97-683fa49c3d41',5.00,'Item-B-2',1,'03b28d2c-5eb4-401e-bcf5-7a5abaf3fa50');
+2026-04-04T23:29:12.025+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552025 | took 0ms | commit | connection 64| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.025+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    168039 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    125311 nanoseconds spent preparing 3 JDBC statements;
+    1531360 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3931970 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.028+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.029+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552029 | took 0ms | statement | connection 65| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-3',0,'2e3d50d6-ceed-463a-b104-23ef6f13729b');
+2026-04-04T23:29:12.029+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.030+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552030 | took 0ms | statement | connection 65| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('2e3d50d6-ceed-463a-b104-23ef6f13729b',5.00,'Item-A-3',1,'29db1bc2-ef74-4059-af5e-ebeea46febcc');
+2026-04-04T23:29:12.030+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.031+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552031 | took 0ms | statement | connection 65| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('2e3d50d6-ceed-463a-b104-23ef6f13729b',5.00,'Item-B-3',1,'6c269725-8fa2-4120-8557-4fbb92793156');
+2026-04-04T23:29:12.031+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552031 | took 0ms | commit | connection 65| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.032+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    182937 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    128848 nanoseconds spent preparing 3 JDBC statements;
+    1721493 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3859433 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.035+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.036+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552036 | took 0ms | statement | connection 66| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-4',0,'4f428548-4e19-41e4-ac65-a06a370bfbd0');
+2026-04-04T23:29:12.036+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.037+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552037 | took 0ms | statement | connection 66| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('4f428548-4e19-41e4-ac65-a06a370bfbd0',5.00,'Item-A-4',1,'892eaa03-9392-4d6e-a3ef-12ac66ec6a24');
+2026-04-04T23:29:12.037+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.038+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552038 | took 0ms | statement | connection 66| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('4f428548-4e19-41e4-ac65-a06a370bfbd0',5.00,'Item-B-4',1,'655552f5-baf6-416c-bf7f-46207a3a18c1');
+2026-04-04T23:29:12.038+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552038 | took 0ms | commit | connection 66| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.039+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    193012 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    135455 nanoseconds spent preparing 3 JDBC statements;
+    1670103 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4317193 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.041+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.042+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552042 | took 0ms | statement | connection 67| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-5',0,'4f7b90d5-efda-433b-8994-428b99a1197c');
+2026-04-04T23:29:12.042+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.043+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552043 | took 0ms | statement | connection 67| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('4f7b90d5-efda-433b-8994-428b99a1197c',5.00,'Item-A-5',1,'fe50af25-b989-4241-8171-7e819624faa4');
+2026-04-04T23:29:12.043+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.043+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552043 | took 0ms | statement | connection 67| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('4f7b90d5-efda-433b-8994-428b99a1197c',5.00,'Item-B-5',1,'533953e1-82f4-404f-8f03-16248c75558e');
+2026-04-04T23:29:12.044+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552044 | took 0ms | commit | connection 67| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.045+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    184810 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    111767 nanoseconds spent preparing 3 JDBC statements;
+    1386220 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3237044 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.047+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.048+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552048 | took 0ms | statement | connection 68| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-6',0,'149d92c4-d05f-4c9f-bbdb-eea4293bc32a');
+2026-04-04T23:29:12.049+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.049+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552049 | took 0ms | statement | connection 68| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('149d92c4-d05f-4c9f-bbdb-eea4293bc32a',5.00,'Item-A-6',1,'3b44455e-5afa-4ec7-8bda-273896b399e3');
+2026-04-04T23:29:12.050+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.050+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552050 | took 0ms | statement | connection 68| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('149d92c4-d05f-4c9f-bbdb-eea4293bc32a',5.00,'Item-B-6',1,'ce9ab178-c306-4bc7-94c6-dc31c98782ba');
+2026-04-04T23:29:12.051+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552051 | took 0ms | commit | connection 68| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.052+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    199157 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    129448 nanoseconds spent preparing 3 JDBC statements;
+    1555470 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4018736 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.054+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.055+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552055 | took 0ms | statement | connection 69| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-7',0,'bf944ba6-30fc-444b-83f7-eae3ca919cf1');
+2026-04-04T23:29:12.055+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.056+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552056 | took 0ms | statement | connection 69| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('bf944ba6-30fc-444b-83f7-eae3ca919cf1',5.00,'Item-A-7',1,'8dc73d24-7aec-4e90-a909-3dad2352efce');
+2026-04-04T23:29:12.056+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.056+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552056 | took 0ms | statement | connection 69| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('bf944ba6-30fc-444b-83f7-eae3ca919cf1',5.00,'Item-B-7',1,'47898c12-3cda-44a6-8cd2-967b548a997d');
+2026-04-04T23:29:12.057+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552057 | took 0ms | commit | connection 69| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.057+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    178486 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    106985 nanoseconds spent preparing 3 JDBC statements;
+    1124692 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2906911 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.059+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.060+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552060 | took 0ms | statement | connection 70| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-8',0,'3062424e-9cd8-4c37-9ca9-8d5113349b28');
+2026-04-04T23:29:12.061+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.061+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552061 | took 0ms | statement | connection 70| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('3062424e-9cd8-4c37-9ca9-8d5113349b28',5.00,'Item-A-8',1,'af41007f-cae0-4117-b97d-4fe576dcb680');
+2026-04-04T23:29:12.062+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.062+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552062 | took 0ms | statement | connection 70| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('3062424e-9cd8-4c37-9ca9-8d5113349b28',5.00,'Item-B-8',1,'21d2b5e5-2341-4a43-bf22-19b35a6b7e5a');
+2026-04-04T23:29:12.063+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552063 | took 0ms | commit | connection 70| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.064+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    154228 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    138272 nanoseconds spent preparing 3 JDBC statements;
+    1419803 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3976870 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.066+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.067+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552067 | took 0ms | statement | connection 71| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-9',0,'b9fcfe6f-61e8-4e3b-b9c4-65de359bfe96');
+2026-04-04T23:29:12.068+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.069+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552069 | took 0ms | statement | connection 71| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('b9fcfe6f-61e8-4e3b-b9c4-65de359bfe96',5.00,'Item-A-9',1,'7c64fce5-fe20-4d2d-b5f2-2c11285d5dae');
+2026-04-04T23:29:12.069+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.069+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552069 | took 0ms | statement | connection 71| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('b9fcfe6f-61e8-4e3b-b9c4-65de359bfe96',5.00,'Item-B-9',1,'3fd06a84-9958-4994-9bd4-e77306ddefb8');
+2026-04-04T23:29:12.070+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552070 | took 0ms | commit | connection 71| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.070+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    421317 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    182297 nanoseconds spent preparing 3 JDBC statements;
+    1378720 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3694334 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.072+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.073+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552073 | took 0ms | statement | connection 72| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-10',0,'f00caaa8-fd14-4fa7-ba12-3420af59ad34');
+2026-04-04T23:29:12.073+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.074+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552074 | took 0ms | statement | connection 72| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('f00caaa8-fd14-4fa7-ba12-3420af59ad34',5.00,'Item-A-10',1,'d1af9a33-b223-426d-a218-52f8d3bea7c2');
+2026-04-04T23:29:12.074+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.074+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552074 | took 0ms | statement | connection 72| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('f00caaa8-fd14-4fa7-ba12-3420af59ad34',5.00,'Item-B-10',1,'0cef4d99-3aca-4bf5-9e01-f73252fb11dc');
+2026-04-04T23:29:12.075+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552075 | took 0ms | commit | connection 72| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.075+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    123250 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    118854 nanoseconds spent preparing 3 JDBC statements;
+    1443254 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3189823 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.079+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.079+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552079 | took 0ms | statement | connection 73| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'batch-user-11',0,'a2836a21-a852-4abb-b648-5e15b3d8ab5f');
+2026-04-04T23:29:12.080+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.080+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552080 | took 0ms | statement | connection 73| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('a2836a21-a852-4abb-b648-5e15b3d8ab5f',5.00,'Item-A-11',1,'06389ece-3444-44f2-b90e-5de33327838b');
+2026-04-04T23:29:12.081+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+Hibernate: insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.081+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552081 | took 0ms | statement | connection 73| url jdbc:h2:mem:phase2db
+insert into order_items (order_id,price,product,quantity,id) values (?,?,?,?,?)
+insert into order_items (order_id,price,product,quantity,id) values ('a2836a21-a852-4abb-b648-5e15b3d8ab5f',5.00,'Item-B-11',1,'86f9db5f-1cce-4a00-ab7a-ece5e0daf554');
+2026-04-04T23:29:12.082+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552082 | took 0ms | commit | connection 73| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.082+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    391793 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    135945 nanoseconds spent preparing 3 JDBC statements;
+    1398629 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3343436 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.085+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+Hibernate: select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+2026-04-04T23:29:12.085+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552085 | took 0ms | statement | connection 74| url jdbc:h2:mem:phase2db
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0;
+2026-04-04T23:29:12.088+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0, time: 2ms, rows: 12
+2026-04-04T23:29:12.089+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Loading 12 orders — @BatchSize(10) will batch item queries
+2026-04-04T23:29:12.090+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+2026-04-04T23:29:12.091+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552091 | took 0ms | statement | connection 74| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in ('f3a7b73f-76bd-4842-b97c-7228bb615a42','045b7244-b5cc-4cb6-a6ea-e8f2866a1540','7bbb6673-5636-4f03-ae97-683fa49c3d41','2e3d50d6-ceed-463a-b104-23ef6f13729b','4f428548-4e19-41e4-ac65-a06a370bfbd0','4f7b90d5-efda-433b-8994-428b99a1197c','149d92c4-d05f-4c9f-bbdb-eea4293bc32a','bf944ba6-30fc-444b-83f7-eae3ca919cf1','3062424e-9cd8-4c37-9ca9-8d5113349b28','b9fcfe6f-61e8-4e3b-b9c4-65de359bfe96');
+2026-04-04T23:29:12.096+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order f3a7b73f-76bd-4842-b97c-7228bb615a42 has 2 items (loaded via batch)
+2026-04-04T23:29:12.096+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 045b7244-b5cc-4cb6-a6ea-e8f2866a1540 has 2 items (loaded via batch)
+2026-04-04T23:29:12.097+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 7bbb6673-5636-4f03-ae97-683fa49c3d41 has 2 items (loaded via batch)
+2026-04-04T23:29:12.097+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 2e3d50d6-ceed-463a-b104-23ef6f13729b has 2 items (loaded via batch)
+2026-04-04T23:29:12.097+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 4f428548-4e19-41e4-ac65-a06a370bfbd0 has 2 items (loaded via batch)
+2026-04-04T23:29:12.097+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 4f7b90d5-efda-433b-8994-428b99a1197c has 2 items (loaded via batch)
+2026-04-04T23:29:12.097+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 149d92c4-d05f-4c9f-bbdb-eea4293bc32a has 2 items (loaded via batch)
+2026-04-04T23:29:12.097+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order bf944ba6-30fc-444b-83f7-eae3ca919cf1 has 2 items (loaded via batch)
+2026-04-04T23:29:12.097+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 3062424e-9cd8-4c37-9ca9-8d5113349b28 has 2 items (loaded via batch)
+2026-04-04T23:29:12.097+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order b9fcfe6f-61e8-4e3b-b9c4-65de359bfe96 has 2 items (loaded via batch)
+2026-04-04T23:29:12.098+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+2026-04-04T23:29:12.099+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552099 | took 0ms | statement | connection 74| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in ('f00caaa8-fd14-4fa7-ba12-3420af59ad34','a2836a21-a852-4abb-b648-5e15b3d8ab5f',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+2026-04-04T23:29:12.100+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order f00caaa8-fd14-4fa7-ba12-3420af59ad34 has 2 items (loaded via batch)
+2026-04-04T23:29:12.100+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order a2836a21-a852-4abb-b648-5e15b3d8ab5f has 2 items (loaded via batch)
+2026-04-04T23:29:12.100+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552100 | took 0ms | commit | connection 74| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.100+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    185097 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    221282 nanoseconds spent preparing 3 JDBC statements;
+    1644635 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    6774 nanoseconds spent executing 1 pre-partial-flushes;
+    7114 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-out>
+  </testcase>
+  <testcase name="batchSize_emptyCollection_handled" classname="com.techleadguru.phase2.day34.Day34BatchSizeTest" time="0.07">
+    <system-out><![CDATA[2026-04-04T23:29:12.110+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+Hibernate: select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+2026-04-04T23:29:12.110+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552110 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0
+select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0;
+2026-04-04T23:29:12.116+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select oi1_0.id,oi1_0.order_id,oi1_0.price,oi1_0.product,oi1_0.quantity from order_items oi1_0, time: 5ms, rows: 24
+2026-04-04T23:29:12.119+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.120+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552120 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='8b8673c7-34ac-457e-8d8f-75cdf98aaa7e';
+2026-04-04T23:29:12.120+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.121+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552121 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='cdcf2e69-1b9a-4654-9c8f-68da3aa6336b';
+2026-04-04T23:29:12.121+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.121+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552121 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='5dfc2a32-a045-47e8-be76-bfdea55be330';
+2026-04-04T23:29:12.122+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.122+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552122 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='2eddde2b-f556-4a38-aa0f-b72605f09a6a';
+2026-04-04T23:29:12.122+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.123+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552123 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='912627dc-4a7e-451e-803b-ab9b8e1c5695';
+2026-04-04T23:29:12.123+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.123+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552123 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='03b28d2c-5eb4-401e-bcf5-7a5abaf3fa50';
+2026-04-04T23:29:12.124+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.124+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552124 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='29db1bc2-ef74-4059-af5e-ebeea46febcc';
+2026-04-04T23:29:12.124+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.125+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552125 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='6c269725-8fa2-4120-8557-4fbb92793156';
+2026-04-04T23:29:12.125+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.126+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552126 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='892eaa03-9392-4d6e-a3ef-12ac66ec6a24';
+2026-04-04T23:29:12.126+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.126+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552126 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='655552f5-baf6-416c-bf7f-46207a3a18c1';
+2026-04-04T23:29:12.127+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.127+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552127 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='fe50af25-b989-4241-8171-7e819624faa4';
+2026-04-04T23:29:12.127+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.128+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552128 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='533953e1-82f4-404f-8f03-16248c75558e';
+2026-04-04T23:29:12.128+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.128+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552128 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='3b44455e-5afa-4ec7-8bda-273896b399e3';
+2026-04-04T23:29:12.129+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.129+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552129 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='ce9ab178-c306-4bc7-94c6-dc31c98782ba';
+2026-04-04T23:29:12.129+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.129+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552129 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='8dc73d24-7aec-4e90-a909-3dad2352efce';
+2026-04-04T23:29:12.130+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.130+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552130 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='47898c12-3cda-44a6-8cd2-967b548a997d';
+2026-04-04T23:29:12.130+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.131+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552131 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='af41007f-cae0-4117-b97d-4fe576dcb680';
+2026-04-04T23:29:12.131+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.131+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552131 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='21d2b5e5-2341-4a43-bf22-19b35a6b7e5a';
+2026-04-04T23:29:12.132+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.132+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552132 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='7c64fce5-fe20-4d2d-b5f2-2c11285d5dae';
+2026-04-04T23:29:12.133+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.133+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552133 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='3fd06a84-9958-4994-9bd4-e77306ddefb8';
+2026-04-04T23:29:12.133+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.134+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552134 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='d1af9a33-b223-426d-a218-52f8d3bea7c2';
+2026-04-04T23:29:12.134+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.134+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552134 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='0cef4d99-3aca-4bf5-9e01-f73252fb11dc';
+2026-04-04T23:29:12.134+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.135+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552135 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='06389ece-3444-44f2-b90e-5de33327838b';
+2026-04-04T23:29:12.135+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from order_items where id=?
+Hibernate: delete from order_items where id=?
+2026-04-04T23:29:12.136+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552136 | took 0ms | statement | connection 75| url jdbc:h2:mem:phase2db
+delete from order_items where id=?
+delete from order_items where id='86f9db5f-1cce-4a00-ab7a-ece5e0daf554';
+2026-04-04T23:29:12.137+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552137 | took 0ms | commit | connection 75| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.137+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    191102 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    843575 nanoseconds spent preparing 25 JDBC statements;
+    9017229 nanoseconds spent executing 25 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    16963317 nanoseconds spent executing 1 flushes (flushing a total of 24 entities and 0 collections);
+    9215 nanoseconds spent executing 1 pre-partial-flushes;
+    9174 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.139+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+Hibernate: select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+2026-04-04T23:29:12.140+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552140 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0;
+2026-04-04T23:29:12.142+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0, time: 2ms, rows: 12
+2026-04-04T23:29:12.144+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+2026-04-04T23:29:12.145+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552145 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in ('f3a7b73f-76bd-4842-b97c-7228bb615a42','045b7244-b5cc-4cb6-a6ea-e8f2866a1540','7bbb6673-5636-4f03-ae97-683fa49c3d41','2e3d50d6-ceed-463a-b104-23ef6f13729b','4f428548-4e19-41e4-ac65-a06a370bfbd0','4f7b90d5-efda-433b-8994-428b99a1197c','149d92c4-d05f-4c9f-bbdb-eea4293bc32a','bf944ba6-30fc-444b-83f7-eae3ca919cf1','3062424e-9cd8-4c37-9ca9-8d5113349b28','b9fcfe6f-61e8-4e3b-b9c4-65de359bfe96');
+2026-04-04T23:29:12.148+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+2026-04-04T23:29:12.149+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552149 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in (?,?,?,?,?,?,?,?,?,?)
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id in ('f00caaa8-fd14-4fa7-ba12-3420af59ad34','a2836a21-a852-4abb-b648-5e15b3d8ab5f',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+2026-04-04T23:29:12.151+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.151+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552151 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='f3a7b73f-76bd-4842-b97c-7228bb615a42' and version=0;
+2026-04-04T23:29:12.152+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.152+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552152 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='045b7244-b5cc-4cb6-a6ea-e8f2866a1540' and version=0;
+2026-04-04T23:29:12.152+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.153+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552153 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='7bbb6673-5636-4f03-ae97-683fa49c3d41' and version=0;
+2026-04-04T23:29:12.153+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.154+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552154 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='2e3d50d6-ceed-463a-b104-23ef6f13729b' and version=0;
+2026-04-04T23:29:12.154+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.154+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552154 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='4f428548-4e19-41e4-ac65-a06a370bfbd0' and version=0;
+2026-04-04T23:29:12.155+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.155+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552155 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='4f7b90d5-efda-433b-8994-428b99a1197c' and version=0;
+2026-04-04T23:29:12.156+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.156+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552156 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='149d92c4-d05f-4c9f-bbdb-eea4293bc32a' and version=0;
+2026-04-04T23:29:12.156+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.157+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552157 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='bf944ba6-30fc-444b-83f7-eae3ca919cf1' and version=0;
+2026-04-04T23:29:12.157+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.157+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552157 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='3062424e-9cd8-4c37-9ca9-8d5113349b28' and version=0;
+2026-04-04T23:29:12.158+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.158+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552158 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='b9fcfe6f-61e8-4e3b-b9c4-65de359bfe96' and version=0;
+2026-04-04T23:29:12.158+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.159+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552159 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='f00caaa8-fd14-4fa7-ba12-3420af59ad34' and version=0;
+2026-04-04T23:29:12.159+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : delete from orders where id=? and version=?
+Hibernate: delete from orders where id=? and version=?
+2026-04-04T23:29:12.159+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552159 | took 0ms | statement | connection 76| url jdbc:h2:mem:phase2db
+delete from orders where id=? and version=?
+delete from orders where id='a2836a21-a852-4abb-b648-5e15b3d8ab5f' and version=0;
+2026-04-04T23:29:12.160+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552160 | took 0ms | commit | connection 76| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.160+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    193371 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    517051 nanoseconds spent preparing 15 JDBC statements;
+    5849496 nanoseconds spent executing 15 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    9648719 nanoseconds spent executing 1 flushes (flushing a total of 12 entities and 12 collections);
+    8849 nanoseconds spent executing 1 pre-partial-flushes;
+    18409 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.163+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+Hibernate: insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+2026-04-04T23:29:12.163+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552163 | took 0ms | statement | connection 77| url jdbc:h2:mem:phase2db
+insert into orders (status,total,user_id,version,id) values (?,?,?,?,?)
+insert into orders (status,total,user_id,version,id) values ('PENDING',10,'user-empty',0,'83630d33-e41d-440a-bd8e-bbbf1d0018d2');
+2026-04-04T23:29:12.164+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552164 | took 0ms | commit | connection 77| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.164+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    206409 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    38469 nanoseconds spent preparing 1 JDBC statements;
+    400990 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1231210 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 1 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2026-04-04T23:29:12.167+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+Hibernate: select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+2026-04-04T23:29:12.167+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552167 | took 0ms | statement | connection 78| url jdbc:h2:mem:phase2db
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0
+select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0;
+2026-04-04T23:29:12.168+05:30 DEBUG 99102 --- [phase2-data] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: [CRITERIA] select o1_0.id,o1_0.status,o1_0.total,o1_0.user_id,o1_0.version from orders o1_0, time: 1ms, rows: 1
+2026-04-04T23:29:12.168+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Loading 1 orders — @BatchSize(10) will batch item queries
+2026-04-04T23:29:12.170+05:30 DEBUG 99102 --- [phase2-data] [           main] org.hibernate.SQL                        : select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+2026-04-04T23:29:12.171+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552171 | took 0ms | statement | connection 78| url jdbc:h2:mem:phase2db
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id=?
+select i1_0.order_id,i1_0.id,i1_0.price,i1_0.product,i1_0.quantity from order_items i1_0 where i1_0.order_id='83630d33-e41d-440a-bd8e-bbbf1d0018d2';
+2026-04-04T23:29:12.171+05:30  INFO 99102 --- [phase2-data] [           main] c.t.p.d.Day34BatchSize$BatchOrderService : [Day34] Order 83630d33-e41d-440a-bd8e-bbbf1d0018d2 has 0 items (loaded via batch)
+2026-04-04T23:29:12.171+05:30  INFO 99102 --- [phase2-data] [           main] p6spy                                    : #1775325552171 | took 0ms | commit | connection 78| url jdbc:h2:mem:phase2db
+
+;
+2026-04-04T23:29:12.171+05:30  INFO 99102 --- [phase2-data] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    330975 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    82301 nanoseconds spent preparing 2 JDBC statements;
+    680958 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    5944 nanoseconds spent executing 1 pre-partial-flushes;
+    6102 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-out>
+  </testcase>
+</testsuite>
